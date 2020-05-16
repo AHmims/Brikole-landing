@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: "font3";
+    src: url("../other/font3.woff2");
+}
+
+/*  */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*  */
+body {
+    background-color: #FFC000;
+    overflow: hidden;
+}
+
+/*  */
+#container {
+    width: fit-content;
+    height: 100%;
+    /*  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#container #logoBg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+#container #logoBg path {
+    fill: #ffffff2b;
+}
+
+h1 {
+    width: fit-content;
+    font-family: 'font3';
+    font-size: 92px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/*  */
+#smallLogo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/*  */
+@media screen and (max-width : 650px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    #container #logoBg {
+        width: 185%;
+    }
+}
